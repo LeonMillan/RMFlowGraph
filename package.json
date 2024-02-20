@@ -1,0 +1,26 @@
+{
+  "name": "rmflowgraph",
+  "version": "1.0.0",
+  "description": "Utility to parse and visualize RPG Maker MV/MZ game data",
+  "main": "index.js",
+  "scripts": {
+    "start": "kotatsu serve --open --typescript index.ts --public / ./public",
+    "make-graph": "kotatsu run --typescript make-graph.ts"
+  },
+  "author": "LeonMillan",
+  "license": "ISC",
+  "dependencies": {
+    "graphology": "0.25.4",
+    "graphology-communities-louvain": "2.0.1",
+    "graphology-layout": "0.6.1",
+    "graphology-layout-forceatlas2": "0.10.1",
+    "graphology-shortest-path": "2.0.2",
+    "graphology-traversal": "0.3.1",
+    "iwanthue": "2.0.0",
+    "sigma": "3.0.0-beta.6"
+  },
+  "devDependencies": {
+    "kotatsu": "0.23.1",
+    "typescript": "5.3.3"
+  }
+}
